@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Solicitar Información</title>
+      <link rel="stylesheet" href="hoja_de_estilos.css">
+  </head>
+
+  <body>
+    <table class="table1">
+      <tr><td class="title1">Solicitar información</td></tr>
+      <tr>
+        <form action="contacto.php" method="post">
+          <td><input class="text-input1" size="100%" type="text" placeholder="Nombre"></td>
+	  <td><input class="text-input1" size="180%" type="text" placeholder="Apellidos" Apellidos="apellido"></td>
+       </tr>
+       <tr>
+         <td><input class="text-input1"  size="100%" type="text" placeholder="Teléfono" Telefono="Móvil"></td>
+          <td><input class="text-input1"  size="180%" type="text" placeholder="E-mail" E-mail="e-mail"></td>
+       </tr>
+       <tr>
+          <td colspan="2"><input class="text-input2" type="text" placeholder="Asunto" Asunto="asunto"></td>
+       </tr>
+  </table>
+
+  <table class="table2">
+    <tr><td class="title2">¿Sobre que vas a informar?</td></tr>
+    <tr>
+      <td><input type="checkbox">  CFGM Atenció a Persones en Situació de Dependència</td>
+      <td><input type="checkbox">  CFGM Activitats Comercials</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox">  CFGM Auxiliar d'Infermeria</td>
+      <td><input type="checkbox">  CFGM Sistemes Microinformàtics i Xarxes</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox">  CFGS Administració de Sistemes Informàtics en Xarxa</td>
+      <td><input type="checkbox">  CFGS Administració i Finances</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox">  CFGS Comerç Internacional</td>
+      <td><input type="checkbox">  CFGS Dietètica</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox">  CFGS Educació Infantil</td>
+      <td><input type="checkbox">  CFGS Màrqueting i Publicitat</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox">  CFGS Integració Social</td>
+      <td><input type="checkbox">  PFI Auxiliars en Muntatges i Manteniment d'Equips Informàtics</td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="checkbox">  Accés a Cicles Formatius de Grau Superior</td>
+    </tr>
+  </table>
+
+  <table class="table3">
+    <tr>
+      <td><input class="text-input2" type="Una altra consulta" placeholder="Alguna consulta más?"></td>
+    </tr>
+  </table>
+
+  <button class="button">Solicitar información</button>
+
+  <br>
+  <form action="contacto.php" method="post">
+
+  <input name="_recipients" type="hidden" value="">
+
+  <input name="_from" type="hidden" value=""> 
+
+  <input name="_subject" type="hidden" value="Contacto Web">
+
+  </body>
+</html>

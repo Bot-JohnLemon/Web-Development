@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <script>
+      // GLOBAL FUNCTIONS
+      var mem = 0;
+      function mostrar($num)
+      {
+      //alert("1");
+      if ((document.calc.disp.value=="") || (document.calc.disp.value==0))
+        document.calc.disp.value=$num;
+      else
+        document.calc.disp.value=document.calc.disp.value+$num;
+      //alert("2");
+      }
+      function calcular()
+      {
+        document.calc.disp.value=eval(document.calc.disp.value);
+      }
+      function borrar()
+      {
+        //x=0
+        document.calc.disp.value=0;
+      }
+      function cambio_signo()
+      {
+        //x = x * -1
+        document.calc.disp.value= document.calc.disp.value * -1;
+      }
+      function quadrat()
+      {
+        //X2= X * X
+        document.calc.disp.value = document.calc.disp.value * document.calc.disp.value;
+      }
+      function arrel()
+      {
+        // x = arrel(x)
+        document.calc.disp.value = Math.sqrt(document.calc.disp.value);
+      }
+      function partido()
+      {
+        // x = 1 / x;
+        document.calc.disp.value = 1 / document.calc.disp.value;
+      }
+      function cubo()
+      {
+        //X3 = X * X * X
+        document.calc.disp.value = document.calc.disp.value *
+        document.calc.disp.value * document.calc.disp.value;
+      }
+      function guardar_mem()
+      {
+        //mem= 78
+        mem = document.calc.disp.value;
+        alert ("Memoria guardada: " + mem)
+      }
+    </script>
+  </head>
+  <body>
+    <form name="calc">
+      <table border="1">
+        <tr>
+          <td colspan="4"><input size="20" name="disp">
+        <tr>
+          <td><input type="button" value=" AC " onclick="borrar(0)">
+          <td><input type="button" value=" +/- " onclick="cambio_signo()">
+          <td><input type="button" value=" x&sup2" onclick="quadrat()">
+          <td><input type="button" value=" &radic; " onclick="arrel()">
+        <tr>
+          <td><input type="button" value=" (" onclick="">
+          <td><input type="button" value=" ) " onclick="">
+          <td><input type="button" value=" 1/x" onclick="">
+          <td><input type="button" value=" Pi " onclick="mostrar(3.1416)">
+        <tr>
+          <td><input type="button" value=" M+ " onclick="guardar_mem()">
+          <td><input type="button" value=" M= " onclick="mostrar($mem)">
+          <td><input type="button" value=" x&sup3; " onclick="cubo()">
+          <td><input type="button" value=" x! " onclick="mostrar('/')">
+        <tr>
+          <td><input type="button" value=" 7 " onclick="mostrar(7)">
+          <td><input type="button" value=" 8 " onclick="mostrar(8)">
+          <td><input type="button" value=" 9 " onclick="mostrar(9)">
+          <td><input type="button" value=" / " onclick="mostrar('/')">
+        <tr>
+          <td><input type="button" value=" 4 " onclick="mostrar(4)">
+          <td><input type="button" value=" 5 " onclick="mostrar(5)">
+          <td><input type="button" value=" 6 " onclick="mostrar(6)">
+          <td><input type="button" value=" * " onclick="mostrar(*)">
+        <tr>
+          <td><input type="button" value=" 1 " onclick="mostrar(1)">
+          <td><input type="button" value=" 2 " onclick="mostrar(2)">
+          <td><input type="button" value=" 3 " onclick="mostrar(3)">
+          <td><input type="button" value=" - " onclick="mostrar(-)">
+        <tr>
+          <td><input type="button" value=" 0 " onclick="mostrar(0)">
+          <td><input type="button" value=" . " onclick="mostrar('.')">
+          <td><input type="button" value=" = " onclick="calcular()">
+          <td><input type="button" value=" + " onclick="mostrar(+)">
+      </table>
+    </form>
+  </body>
+</html>

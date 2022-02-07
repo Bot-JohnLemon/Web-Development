@@ -1,0 +1,175 @@
+.td_button{
+	padding-right: 75px;
+}
+
+.td_list{
+	padding: 0px;
+}
+
+.ul{
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.li{
+	font-family: "Open Sans",sans-serif;
+	font-size: 13px;
+	color: white;
+	display: inline;
+	padding-left: 30px;
+	font-weight: bold;
+
+}
+
+.hr{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	border: 0px;
+	border-top-style: solid;
+	height: 5px;
+	width: 100%;
+	color: #5d96b3;
+	background-color: #5d96b3;
+}
+
+.hr_bottom1{
+	align: bottom;
+	margin-bottom: 0px;
+	margin-top: 3px;
+	border: 0px;
+	border-top-style: solid;
+	height: 5px;
+	width: 100%;
+	background-color: #5b596b;
+}
+
+.hr_bottom2{
+	align: bottom;
+	margin-bottom: 0px;
+	margin-top: 3px;
+	border: 0px;
+	border-top-style: solid;
+	height: 3px;
+	width: 100%;
+	background-color: #5d96b3;
+}
+
+.hr_bottom3{
+	align: bottom;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	border: 0px;
+	border-top-style: solid;
+	height: 30px;
+	width: 100%;
+	background-color: #292f38;
+}
+
+.table1{
+	width: 100%;
+	background-color: white;
+	border-collapse: collapse;
+}
+
+.table2{
+	width: 100%;
+	height: 50px;
+	background-color: #3a454b;
+	border-collapse: collapse;
+
+}
+
+.body{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+}
+
+.button{
+	border: none;
+	background-color: #5d96b3;
+	color: white;
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	cursor: pointer;
+	margin-top: -60px;
+	position: relative;
+    	top:0%;
+}
+
+.bloq{
+	width: 100%;
+	height: 55px;
+	background: white;
+}
+
+
+/*__________________________________________________________________________________________________________*/
+/*				ESTILOS NAVEGACION TABLA DESPLEGABLE                                        */
+/*__________________________________________________________________________________________________________*/
+
+
+.navegacion{
+	width: 1000px;
+	margin: 0px;
+	background: #3a454b;
+  	border-collapse: collapse;
+}
+
+.navegacion ul{
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+}
+
+.menu > li{
+	padding: 0px;
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	font-family: "Open sans",sans serif;
+	font-size: 13;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: white;
+  	background-color: #60a369;
+	transition: all .2s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #fff;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.20s;
+	padding: 0px 0px 0px 0px;
+	width: 217px;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #000;
+	font-family: 'Open sans',sans serif;
+	font-size: 13;
+	text-decoration: none;
+	border-color: black;
+	border-top: 1px;
+	border-bottom: 1px;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
